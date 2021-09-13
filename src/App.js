@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Carousel } from './Carousel';
+import { InnerImageZoom } from './InnerImageZoom';
+import { Axios } from './Axios';
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Sandbox of Libraries</h1>
+
+      <Axios />
+
+
+      {/* <h2>React Slick</h2>
+      <Carousel /> */}
+
+      {/* <h2>Inner Image Zoom</h2> */}
+      {/* <InnerImageZoom /> */}
     </div>
   );
 }
-
-export default App;
